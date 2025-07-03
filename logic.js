@@ -26,6 +26,8 @@ function UpdateLocation(){
         .then(response => response.json())
         .then(data => {
 
+            resultsContainer.classList.remove("hidden");
+
             if(data.error){
 
                 alert("Invalid Location!");
@@ -44,7 +46,6 @@ function UpdateLocation(){
                     resultsContainer.classList.remove("error");
                 }
 
-                resultsContainer.classList.remove("hidden");
                 const location = data.location.name;
                 const temp = data.current.temp_c;
                 const desc = data.current.condition.text;
