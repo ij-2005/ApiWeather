@@ -1,0 +1,173 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.title-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.title-section h1{
+  font-weight: 300;
+
+}
+
+.options-section {
+  background: linear-gradient(165deg, #69c3ff, #5197e7);
+  box-shadow: 0 4px 12px rgba(3, 57, 107, 0.5);
+  width: 300px;
+  margin: 120px auto 30px auto;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.results-section {
+  background: linear-gradient(165deg, #69c3ff, #5197e7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 5px;
+}
+
+.error {
+  background: linear-gradient(165deg, #f5483c, #ce1414);
+  box-shadow: 0 4px 12px rgba(161, 0, 0, 0.637);
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 5px;
+}
+
+.error h2 {
+  text-align: left;
+}
+
+.options-container, .results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.options-inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.options-inputGroup input {
+  font-family: "Roboto", "sans-serif";
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.25s ease;
+}
+
+.options-inputGroup button {
+  font-family: "Roboto", "sans-serif";
+  padding: 10px;
+  border: none;
+  background: linear-gradient(90deg, #1831c0, #3975dd);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.25s ease;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  margin: 5px;
+  text-align: justify;
+}
+
+.owner-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.owner-section h3{
+  font-weight: 300;
+}
+
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+  color: rgb(221, 221, 221);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 4px #5d90e7;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: black;
+}
+
+@media(max-width:650px){
+
+  .title-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .options-section {
+  width: 200px;
+  margin: 120px auto 30px auto;
+}
+
+.results-section {
+  width: 200px;
+  margin: 0 auto;
+}
+
+  .options-container, .results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+  .error h2 {
+  font-size: 2px;
+}
+
+
+  
+}
+

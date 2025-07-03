@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather broadcast</title>
+</head>
+
+<main>
+  <body>
+
+    <section class="title-section">
+      <h1>Weather Forecast.</h1>
+    </section>
+
+    <section class="options-section">
+      <div class="options-container">
+        <div class="options-inputGroup">
+          <input type="text" placeholder="Enter a location.." id="input-box" required/>
+          <button id="inputBtn">See weather status</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section hidden">
+      <div class="results-container">
+        <div class="details-container">
+          <h2 id="cityName"></h2>
+          <p id="temperature"></p>
+          <p id="description"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="owner-section">
+      <h3>made by <a href="https://github.com/ij-2005" target="_blank">IJ2005</a></h3>
+    </section>
+  </body>
+</main>
+<script src="logic.js"></script>
+</html>
